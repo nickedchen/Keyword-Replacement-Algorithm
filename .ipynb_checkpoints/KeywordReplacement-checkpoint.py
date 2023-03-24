@@ -47,9 +47,9 @@ def replace_acronyms(reviews, acronym_list, expansion_list):
 
 
 #temporary test
-# print(review_List)
-# startTime = time.perf_counter()
-# replacedReviews = replace_acronyms(reviews, acronym_list, expansion_list)
-# endTime = time.perf_counter()
-# print(replacedReviews)
-# print(f"replace_acronyms execution time: {endTime - startTime:.2f} seconds")
+print(reviewList)
+startTime = time.perf_counter()
+replacedReviews = Algorithm1(reviewList, acronymList, expansionList)
+endTime = time.perf_counter()
+print(replacedReviews)
+print(f"Algorithm 1 execution time: {endTime - startTime:.2f} seconds")
