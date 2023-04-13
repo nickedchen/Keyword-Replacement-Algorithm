@@ -8,11 +8,11 @@ The repository includes two versions of the same algorithm. Both implementations
 
 ## Datasets
 
-The algorithm was tested against with the reviews dataset provided by the course instructor Dr. Fard and Acronyms dataset provided by [Kaggle](https://www.kaggle.com/datasets/gowrishankarp/chat-slang-abbreviations-acronyms).
+The algorithm was tested against with the reviews dataset provided by the course instructor Dr. Fard and acronyms dataset provided by [Kaggle](https://www.kaggle.com/datasets/gowrishankarp/chat-slang-abbreviations-acronyms).
 
 ## Implementation
 
-The first implementation, milestone 3, was created using brute force method with two for loops. The first for loop iterates through each review and splits the review into a list of words. The second for loop iterates through each word and converts it to lower case, and then checks to see if it is in the acronyms list. If it is, the word gets replaced with the expansion corresponding to the acronym. The function finishes by returning the new review list containing the expansions instead of acronyms. 
+The first implementation, `milestone3.py`, was created using brute force method with two for loops. The first for loop iterates through each review and splits the review into a list of words. The second for loop iterates through each word and converts it to lower case, and then checks to see if it is in the acronyms list. If it is, the word gets replaced with the expansion corresponding to the acronym. The function finishes by returning the new review list containing the expansions instead of acronyms. 
 
 
 ``` python
@@ -31,7 +31,7 @@ def replace_acronyms(reviews, acronym_list, expansion_list):
 
 ```
 
-The second algorithm utilizes hashmap to reduce the time complexity. The main modification made in the second algorithm was the use of a hashmap to store the acronyms and their corresponding expansions, instead of a list of tuples as used in the first algorithm. This allowed for constant time lookup of the expansion for each acronym, resulting in a significant reduction in the time complexity of the function. The load_acronyms function was modified to read the data and store it as a dictionary, with the acronyms as the keys and their expansions as the values.
+The second algorithm in `milestone4.py` utilizes hashmap to reduce the time complexity. The main modification made in the second algorithm was the use of a hashmap to store the acronyms and their corresponding expansions, instead of a list of tuples as used in the first algorithm. This allowed for constant time lookup of the expansion for each acronym, resulting in a significant reduction in the time complexity of the function. The load_acronyms function was modified to read the data and store it as a dictionary, with the acronyms as the keys and their expansions as the values.
 
 ``` python
 
