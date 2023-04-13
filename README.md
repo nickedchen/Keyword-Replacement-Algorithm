@@ -34,10 +34,6 @@ def replace_acronyms(reviews, acronym_list, expansion_list):
 The second algorithm utilizes hashmap to reduce the time complexity. The main modification made in the second algorithm was the use of a hashmap to store the acronyms and their corresponding expansions, instead of a list of tuples as used in the first algorithm. This allowed for constant time lookup of the expansion for each acronym, resulting in a significant reduction in the time complexity of the function. The load_acronyms function was modified to read the data and store it as a dictionary, with the acronyms as the keys and their expansions as the values.
 
 ``` python
-H = {}
-for abb, term in abbreviations.items():
-    H[abb.lower()] = term
-# The above is the initialization of the dataset hashmap, not included in the analysis.
 
 def replace_abbreviations(M, H): # M is the input string, H is the hashmap dataset        
 M_splited = M.split() # Split the message into words
